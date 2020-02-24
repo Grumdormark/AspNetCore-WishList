@@ -6,7 +6,7 @@ namespace WishListTests
 {
     public class CreateHomeViewsTests
     {
-        [Fact(DisplayName = "Create the Home/Index View @create-index-view", Skip = "")]
+        [Fact(DisplayName = "Create the Home/Index View @create-index-view")]
         public void CreateIndexViewTest()
         {
             // Get appropriate path to file for the current operating system
@@ -24,7 +24,7 @@ namespace WishListTests
             Assert.True(rgx.IsMatch(file), "`Index.cshtml` was found, but does not appear to contain both an opening and closing `h1` tag.");
         }
 
-        [Fact(DisplayName = "Create the Shared/Error View @create-error-view", Skip = "")]
+        [Fact(DisplayName = "Create the Shared/Error View @create-error-view")]
         public void CreateErrorViewTest()
         {
             // Get appropriate path to file for the current operating system
