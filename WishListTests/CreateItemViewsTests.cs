@@ -6,7 +6,7 @@ namespace WishListTests
 {
     public class CreateItemIndexViewTests
     {
-        [Fact(DisplayName = "Create Item's Index View @create-items-index-view")]
+        [Fact(DisplayName = "Create Item's Index View @create-items-index-view", Skip = "")]
         public void CreateItemsIndexView()
         {
             // Get appropriate path to file for the current operating system
@@ -34,7 +34,7 @@ namespace WishListTests
             Assert.True(aTag.Contains(@"asp-action=""delete""") && aTag.Contains(@"asp-route-id=""@item.Id"""), "`Index.cshtml` contains an `a` tag, but that `a` tag does not appear to have both tag helpers `asp-action` set to 'delete' and `asp-route-id` set to `@item.Id`");
         }
 
-        [Fact(DisplayName = "Add Item Link To Home @add-item-link-to-home")]
+        [Fact(DisplayName = "Add Item Link To Home @add-item-link-to-home", Skip = "")]
         public void AddItemLinkToHomeTest()
         {
             // Get appropriate path to file for the current operating system

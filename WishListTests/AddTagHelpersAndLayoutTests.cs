@@ -6,7 +6,7 @@ namespace WishListTests
 {
     public class AddTagHelpersAndLayoutTests
     {
-        [Fact(DisplayName = "Add Tag Helper Support @add-tag-helper-support")]
+        [Fact(DisplayName = "Add Tag Helper Support @add-tag-helper-support", Skip = "")]
         public void AddTagHelperSupportTest()
         {
             // Get appropriate path to file for the current operating system
@@ -22,7 +22,7 @@ namespace WishListTests
             Assert.True(file.Contains(@"@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers"), "`_ViewImports.cshtml` was found, but does not appear to contain `@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers`.");
         }
 
-        [Fact(DisplayName = "Add Base Layout @add-base-layout")]
+        [Fact(DisplayName = "Add Base Layout @add-base-layout", Skip = "")]
         public void AddBaseLayoutTest()
         {
             // Get appropriate path to file for the current operating system

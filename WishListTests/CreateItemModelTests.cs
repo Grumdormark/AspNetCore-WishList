@@ -8,7 +8,7 @@ namespace WishListTests
 {
     public class CreateItemModelTests
     {
-        [Fact(DisplayName = "Create Item Model @create-item-model")]
+        [Fact(DisplayName = "Create Item Model @create-item-model", Skip = "")]
         public void CreateItemModelTest()
         {
             var filePath = ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + "WishList" + Path.DirectorySeparatorChar + "Models" + Path.DirectorySeparatorChar + "Item.cs";
@@ -25,7 +25,7 @@ namespace WishListTests
             Assert.True(((MaxLengthAttribute)descriptionProperty.GetCustomAttributes(typeof(MaxLengthAttribute), false)?.FirstOrDefault())?.Length == 50, "`Item` class's `Description` property didn't have a `MaxLength` attribute of `50`.");
         }
 
-        [Fact(DisplayName = "Add Item to ApplicationDbContext @add-item-to-applicationdbcontext")]
+        [Fact(DisplayName = "Add Item to ApplicationDbContext @add-item-to-applicationdbcontext", Skip = "")]
         public void AddItemToApplicationDbContextTest()
         {
             // Get appropriate path to file for the current operating system

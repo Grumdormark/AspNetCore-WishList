@@ -6,7 +6,7 @@ namespace WishListTests
 {
     public class CreateItemCreateViewTests
     {
-        [Fact(DisplayName = "Create Create View @create-create-view")]
+        [Fact(DisplayName = "Create Create View @create-create-view", Skip = "")]
         public void CreateCreateView()
         {
             // Get appropriate path to file for the current operating system

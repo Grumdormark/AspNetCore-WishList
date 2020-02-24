@@ -10,7 +10,7 @@ namespace WishListTests
 {
     public class CreateItemControllerTests
     {
-        [Fact(DisplayName = "Create ItemController @create-itemcontroller")]
+        [Fact(DisplayName = "Create ItemController @create-itemcontroller", Skip = "")]
         public void CreateItemControllerTest()
         {
             // Get appropriate path to file for the current operating system
@@ -46,7 +46,7 @@ namespace WishListTests
             Assert.True(rgx.IsMatch(file), "`ItemController`'s constructor did not set the `_context` property to the provided `ApplicationDbContext` parameter.");
         }
 
-        [Fact(DisplayName = "Create Item Index Action @create-item-index-action")]
+        [Fact(DisplayName = "Create Item Index Action @create-item-index-action", Skip = "")]
         public void CreateItemIndexActionTest()
         {
             // Get appropriate path to file for the current operating system
@@ -75,7 +75,7 @@ namespace WishListTests
             Assert.True(rgx.IsMatch(file), "`ItemController`'s `Index` action does not appear to be getting all `Item`s from `_context.Items` converting it to type `List<Item>` and returning it as the model for the 'Index' view.");
         }
 
-        [Fact(DisplayName = "Create Item Create HttpGet Action @create-item-create-httpget-action")]
+        [Fact(DisplayName = "Create Item Create HttpGet Action @create-item-create-httpget-action", Skip = "")]
         public void CreateItemCreateHttpGetActionTest()
         {
             // Get appropriate path to file for the current operating system
@@ -108,7 +108,7 @@ namespace WishListTests
             Assert.True(rgx.IsMatch(file), "`ItemController`'s `Create` (Get) action does not appear to be returning the 'Create' view.");
         }
 
-        [Fact(DisplayName = "Create Item Create HttpPost Action @create-item-create-httppost-action")]
+        [Fact(DisplayName = "Create Item Create HttpPost Action @create-item-create-httppost-action", Skip = "")]
         public void CreateItemCreateHttpPostActionTest()
         {
             // Get appropriate path to file for the current operating system
@@ -145,7 +145,7 @@ namespace WishListTests
             Assert.True(rgx.IsMatch(file), "`ItemController`'s `Create` (Post) action does not appear to be adding the provided `item` to `_context.Items`, `SaveChanges`, and then redirecting to the `Item`'s `Index` action.");
         }
 
-        [Fact(DisplayName = "Create Item Delete Action @create-item-delete-action")]
+        [Fact(DisplayName = "Create Item Delete Action @create-item-delete-action", Skip = "")]
         public void CreateItemDeleteActionTest()
         {
             // Get appropriate path to file for the current operating system

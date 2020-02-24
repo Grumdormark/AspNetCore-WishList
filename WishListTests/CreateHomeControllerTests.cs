@@ -8,7 +8,7 @@ namespace WishListTests
 {
     public class CreateHomeControllerTests
     {
-        [Fact(DisplayName = "Create the HomeController @create-the-homecontroller")]
+        [Fact(DisplayName = "Create the HomeController @create-the-homecontroller", Skip = "")]
         public void CreateHomeControllerTest()
         {
             // Get appropriate path to file for the current operating system
@@ -22,7 +22,7 @@ namespace WishListTests
             Assert.True(controllerType.BaseType == typeof(Controller), "`HomeController` was found, but is not inheriting the `Controller` class. (you will need a using directive for `Microsoft.AspNetCore.Mvc`)");
         }
 
-        [Fact(DisplayName = "Create the HomeController's Index Action @create-homecontrollers-index-action")]
+        [Fact(DisplayName = "Create the HomeController's Index Action @create-homecontrollers-index-action", Skip = "")]
         public void CreateHomeControllersIndexActionTest()
         {
             // Get appropriate path to file for the current operating system
@@ -44,7 +44,7 @@ namespace WishListTests
             Assert.True(result.ViewName == "Index", "`HomeController.Index` did not explicitly return the `Index` view.");
         }
 
-        [Fact(DisplayName = "Create the HomeController's Error Action @create-homecontrollers-error-action")]
+        [Fact(DisplayName = "Create the HomeController's Error Action @create-homecontrollers-error-action", Skip = "")]
         public void CreateHomeControllersErrorActionTest()
         {
             // Get appropriate path to file for the current operating system

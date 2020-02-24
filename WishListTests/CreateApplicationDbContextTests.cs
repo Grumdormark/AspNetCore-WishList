@@ -8,7 +8,7 @@ namespace WishListTests
 {
     public class CreateApplicationDbContextTests
     {
-        [Fact(DisplayName = "Create Class ApplicationDbContext @create-class-applicationdbcontext")]
+        [Fact(DisplayName = "Create Class ApplicationDbContext @create-class-applicationdbcontext", Skip = "")]
         public void CreateApplicationDbContextTest()
         {
             // Get appropriate path to file for the current operating system
@@ -22,7 +22,7 @@ namespace WishListTests
             Assert.True(applicationDbContext.BaseType == typeof(DbContext), "`ApplicationDbContext` was found, but did not inherit the `DbContext` class. (this will require a using directive for the `Microsoft.EntityFrameWorkCore` namespace)");
         }
 
-        [Fact(DisplayName = "Add Constructor to ApplictionDbContext @add-constructor-to-applicationdbcontext")]
+        [Fact(DisplayName = "Add Constructor to ApplictionDbContext @add-constructor-to-applicationdbcontext", Skip = "")]
         public void AddConstructorToApplicationDbContextTest()
         {
             // Get appropriate path to file for the current operating system
